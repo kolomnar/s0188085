@@ -19,12 +19,28 @@
         <li><a href="https://about.google/">относительная на страницу в каталоге about</a></li>
         <li><a href="../p2\1yr.html">страница в каталоге уровнем выше текущего</a></li>
         <li>  Контекстная <a href="https://quran-online.ru/" title="Коран люблю Аллаха"> ссылка </a> в тексте абзаца </li>
-        <li>Из прямоугольных и круглых областей картинки <br> <img src="https://github.com/kolomnar/s0188085/blob/main/mashina.jpg?raw=true" alt="Шаринган" width="400" usemap="#eye">
-            <map name="eye">
+        <li>Из прямоугольных и круглых областей картинки <br> <img src="https://github.com/kolomnar/s0188085/blob/main/mashina.jpg?raw=true" alt="машина" width="400" usemap="#krug">
+            <map name="krug">
                 <area shape="circle" coords="200,250,250" alt="круг" href="https://www.dns-shop.ru/product/77054631205bed20/stiralnaa-masina-miele-wwv-980-wps-belyj/" title="Круглая область">
                 <area shape="rect" coords="0,0,100,250" alt="прямоугольник" href="https://www.dns-shop.ru/product/cd4c0ff452aeed20/67-smartfon-apple-iphone-15-pro-max-256-gb-seryj/" title="Прямоугольная область">
             </map>
     </li>
+        <li> <a href="" > С пустым href </a> </li>
+        <li> <a title="Не является ссылкой"> Без href </a> </li>
+        <li> <a href="inside.html" title="inside страница" rel="nofollow"> 18) Ссылка, по которой запрещён переход поисковикам </a> </li>
+        <li>
+		<!-- <noindex> -->
+                	<a href="inside.html" title="noindex"> 19) Запрещённая ссылка для индексации поисковиками </a>
+            	<!-- </noindex> -->
+        </li>
+        <li> Нумерованный список ссылок с подписями title
+            <ol>
+                <li> <a href="https://proza.ru/2018/07/26/1852?ysclid=m0zkgrp927608892073" title="Берсерк"> Берсерк </a> </li>
+		<li> <a href="https://en.m.wikipedia.org/wiki/Odetari" title="hypnotic data"> odetari </a> </li>
+            </ol>
+        </li>
+        <li> <a href ="ftp://username:password@ftp.test.com:16/file.txt" > На файл на сервере FTP с авторизацией </a> </li>
+    </ul>
 
     </ul>
 </body>
