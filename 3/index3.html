@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task #3 </title>
+    <link rel="stylesheet" href="style3.css">
+
+    
+</head>
+
+
+
+<body class = "body">  
+    <header class = "header">
+      <div class = "logo">
+      <img class= "picture" src="логотип.jpg" title = "logo" height = 120 width=120 alt="Site logo">  
+      <h1 title = "Задание №3"> Task #3 </h1> 
+    </div>
+      <nav class = "nav">    
+          <a href="#links" style="color: rgb(0, 0, 0)">Links</a>
+          <a href="#planets" style="color: rgb(0, 0, 0)">Table</a>
+          <a href="#form" style="color: rgb(0, 0, 0)">Form</a>  
+      </nav>  
+
+    </header>
+
+
+<main class = "main">
+    <div class = "links" id = "links">
+      <div class = "window">
+      <h1 title = "Ссылки">Links</h1>
+      <p><a href = "https://cbr.ru/" style="color: rgb(0, 0, 0)" title = "ЦБР"> Центральный банк РФ </a></p>
+      <p><a href = "https://ru.wikipedia.org/wiki/Финансовое_право" style="color: rgb(0, 0, 0)" title = "финансовое право"> Финансовое право </a></p>
+      <p><a href = "https://finance.rambler.ru/calculators/converter/1-RUB-RUB/" style="color: rgb(0, 0, 0)" title = "курс рубля" > Курс рубля </a></p>
+      <p><a href = "https://ru.wikipedia.org/wiki/Инфляция" style="color: rgb(0, 0, 0)" title = "инфляция"> Инфляция </a></p>
+      <p><a href = "https://ru.wikipedia.org/wiki/Деньги" style="color: rgb(0, 0, 0)" title = "деньги"> Деньги </a></p>
+    </div>
+  </div>
+
+  <div class = "window">
+<div class = "table">
+
+  <table id = "table">
+    <thead>
+      <tr>
+          <th>Страна</th>
+          <th>Валюта</th>
+          <th>В рублях</th>
+          <th>В каком году введена</th>
+          <th>Символ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Россия</td>
+          <td>Рубль</td>
+          <td>1 руб</td>
+          <td>1654г</td>
+          <td>₽</td>
+      </tr>
+      <tr>
+          <td>Казахстан</td>
+          <td>Тенге</td>
+          <td>0.2 руб</td>
+          <td>1993г</td>
+          <td>₸</td>
+      </tr>
+      <tr>
+          <td>США</td>
+          <td rowspan="2">Доллар</td>
+          <td rowspan="2">95 руб</td>
+          <td>1785г</td>
+          <td>$</td>
+      </tr>
+      <tr>
+        <td>Эквадор</td>
+        <td>2000г</td>
+        <td>$</td>
+    </tr>
+    <tr>
+      <td>Германия</td>
+      <td rowspan ="2">Евро</td>
+      <td rowspan="2">105 руб</td>
+      <td rowspan = "2">1999г</td>
+      <td>€</td>
+    </tr>
+    <tr>
+      <td>Австрия</td>
+      <td>€</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+</div>
+
+   
+<div class = "form">
+
+  <form action="/" method="POST" class = "window">
+    <label id = "form">
+      ФИО:<br />
+      <input name="field-email" class = "field" 
+      placeholder="Введите ваши ФИО" />
+    </label><br />
+    <label>
+      Телефон:<br />
+      <input name="field-name" class = "field"
+      placeholder="Введите ваш номер телефона" />
+    </label><br />
+    <label>
+      Email:<br />
+      <input name="field-email" class = "field"
+      type="email"
+      placeholder="Введите вашу почту" />
+    </label><br />
+    <label>
+      Дата рождения:<br />
+      <input name="field-date" class = "field"
+      value="2019-08-13"
+      type="date" />
+    </label><br />
+    Пол<br />
+    <label><input type="radio" checked="checked"
+      name="radio-group-1" value="Значение1" />
+      Женский</label>    
+      <label><input type="radio"   
+        name="radio-group-1" value="Значение2" />
+        Мужской</label><br />
+        <label>
+          Ваш любимый язык программирования:
+          <br />
+          <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+        </select>
+      </label><br />
+      <label>
+        Биография:<br />
+        <textarea class = "field" name="field-name-2">Расскажите о себе</textarea>
+      </label><br />
+      <br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        С контрактом ознакомлен (а)</label><br />
+        <input type="submit" value="Сохранить" />
+      </form>
+      <div id="down"> </div>
+  </div>
+</main>
+
+      <div class = "footer">
+        <footer>
+          <p>&copy; Arina Kolomiets</p>
+        </footer>
+      </div>
+    </body>
+    </html>
 
