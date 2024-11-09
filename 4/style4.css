@@ -1,0 +1,42 @@
+.body {
+  background: right url("фон1.jpg");
+  background-repeat: repeat;
+  background-size: 100% auto;
+}
+
+.header,.footer {
+  border-radius: 5%;
+}
+
+#nav_button{
+  color: #000000;
+}
+
+.window{
+  background: right url("фон2.jpg");
+  border-radius: 5%;
+  max-width: 960px;
+}
+
+.table {
+  border-collapse: collapse;
+  overflow-x: auto;
+  max-width: 500px;
+}
+
+th, td {
+  border: 3px solid #153607;
+}
+
+th {
+  background-color: #60d27e; 
+}
+
+tbody tr:nth-child(even) {
+  background-color: #60d27e; /*четныe*/
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #c8efd3;; /*нечетныe*/
+}
+
