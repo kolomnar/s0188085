@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task #4 </title>
+    <link rel="stylesheet" href="style4.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+
+<body class = "body font-weight-bold text-black">  
+    <header class = "header d-flex justify-content-between flex-column flex-sm-row bg-light mt-2 mb-3 p-3">
+      <div class = "logo d-flex flex-row">
+      <img class= "picture" src="логотип.jpg" title = "logo" height = 120 width=120 alt="Site logo">  
+      <h1 class = "mt-4" title = "Задание №4"> Task #4 </h1> 
+    </div>
+      <nav class = "nav d-flex flex-column flex-sm-row pl-3 pb-3 mb-3 ml-3 mr-3">    
+          <a href="#links" id = "nav_button" class = "m-1">Ссылки</a>
+          <a href="#table" id = "nav_button" class = "m-1">Таблица</a>
+          <a href="#form" id = "nav_button" class = "m-1">Форма</a>  
+      </nav>  
+
+    </header>
+
+
+  <main class = "main d-flex flex-column fs-1">
+    <div class = "window container d-flex flex-column mb-3 p-4">
+      <div class = "table">
+        <table class = "table text-center" id="planets">
+            <thead>
+                <tr>
+                    <th class = "p-1">Страна</th>
+                    <th class = "p-1">Валюта</th>
+                    <th class = "p-1">В рублях</th>
+                    <th class = "p-1">В каком году введена</th>
+                    <th class = "p-1">Символ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class = "p-1">Россия</td>
+                    <td class = "p-1" colspan="2">Рубль</td>
+                    <td class = "p-1">1654г</td>
+                    <td class = "p-1">₽</td>
+                </tr>
+                <tr>
+                    <td class = "p-1">Казахстан</td>
+                    <td class = "p-1">Тенге</td>
+                    <td class = "p-1">0.2 руб</td>
+                    <td class = "p-1">1993г</td>
+                    <td class = "p-1">₸</td>
+                </tr>
+                <tr>
+                    <td class = "p-1">США</td>
+                    <td class = "p-1" rowspan="2">Доллар</td>
+                    <td class = "p-1" rowspan="2">95 руб</td>
+                    <td class = "p-1">1785г</td>
+                    <td class = "p-1">$</td>
+                </tr>
+                <tr>
+                  <td class = "p-1">Эквадор</td>
+                  <td class = "p-1">2000г</td>
+                  <td class = "p-1">$</td>
+              </tr>
+              <tr>
+                <td class = "p-1">Германия</td>
+                <td class = "p-1" rowspan ="2">Евро</td>
+                <td class = "p-1" rowspan="2">105 руб</td>
+                <td class = "p-1" rowspan = "2">1999г</td>
+                <td class = "p-1">€</td>
+              </tr>
+              <tr>
+                <td class = "p-1">Австрия</td>
+                <td class = "p-1">€</td>
+              </tr>
+          
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class = "links order-sm-first" id = "links">
+      <div class = "window container d-flex flex-column mb-3 p-4" >
+        <h1 title = "Ссылки">Ссылки</h1>
+      <p><a href = "https://cbr.ru/" style="color: rgb(0, 0, 0)" title = "ЦБР"> Центральный банк РФ </a></p>
+      <p><a href = "https://ru.wikipedia.org/wiki/Финансовое_право" style="color: rgb(0, 0, 0)" title = "финансовое право"> Финансовое право </a></p>
+      <p><a href = "https://finance.rambler.ru/calculators/converter/1-RUB-RUB/" style="color: rgb(0, 0, 0)" title = "курс рубля" > Курс рубля </a></p>
+      <p><a href = "https://ru.wikipedia.org/wiki/Инфляция" style="color: rgb(0, 0, 0)" title = "инфляция"> Инфляция </a></p>
+      <p><a href = "https://ru.wikipedia.org/wiki/Деньги" style="color: rgb(0, 0, 0)" title = "деньги"> Деньги </a></p>
+      </div>
+    </div>
+
+    <div class = "form">
+      <form action="/" method="POST" class = "window container d-flex flex-column mb-3 p-4">
+        <label id = "form">
+          ФИО:<br />
+          <input name="field-email" class = "field" 
+          placeholder="Введите ваши ФИО" />
+        </label><br />
+        <label>
+          Телефон:<br />
+          <input name="field-name" class = "field"
+          placeholder="Введите ваш номер телефона" />
+        </label><br />
+        <label>
+          Email:<br />
+          <input name="field-email" class = "field"
+          type="email"
+          placeholder="Введите вашу почту" />
+        </label><br />
+        <label>
+          Дата рождения:<br />
+          <input name="field-date" class = "field"
+          value="2019-08-13"
+          type="date" />
+        </label><br />
+        Пол<br />
+        <label><input type="radio" checked="checked"
+          name="radio-group-1" value="Значение1" />
+          Женский</label>    
+          <label><input type="radio"   
+            name="radio-group-1" value="Значение2" />
+            Мужской</label><br />
+            <label>
+              Ваш любимый язык программирования:
+              <br />
+              <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Значение1">Pascal</option>
+              <option value="Значение2" selected="selected">C</option>
+              <option value="Значение3" selected="selected">C++</option>
+              <option value="Значение4" selected="selected">JavaScript</option>
+              <option value="Значение5" selected="selected">PHP</option>
+              <option value="Значение6" selected="selected">Python</option>
+              <option value="Значение7" selected="selected">Java</option>
+              <option value="Значение8" selected="selected">Haskel</option>
+              <option value="Значение9" selected="selected">Clojure</option>
+              <option value="Значение10" selected="selected">Prolog</option>
+              <option value="Значение11" selected="selected">Scala</option>
+            </select>
+          </label><br />
+          <label>
+            Биография:<br />
+            <textarea class = "field" name="field-name-2">Расскажите о себе</textarea>
+          </label><br />
+          <br />
+          <label><input type="checkbox" checked="checked"
+            name="check-1" />
+            С контрактом ознакомлен (а)</label><br />
+
+        <input type="submit" class = "field" value="Сохранить" />
+          </form>
+          <div id="down"> </div>
+      </div>
+  </main>
+  <div class = "footer d-flex flex-column bg-light mb-3 p-3">
+    <footer>
+      <p>&copy; Arina Kolomiets </p>
+    </footer>
+  </div>
+</body>
+</html>
