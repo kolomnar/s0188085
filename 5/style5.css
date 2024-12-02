@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(to bottom right, #1d74a9, #84b9d6);
+    height: 100vh; /* Занять всю высоту окна */
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    font-family: Noto Sans, sans-serif;
+    overflow: hidden;
+    font-size: 20px;
+}
+.container {
+    max-width: 600px;
+    min-height: 250px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для контейнера */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Noto Sans, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+.button{
+    background-color: #4a9bcd;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-family: Noto Sans, sans-serif;
+    font-size: 20px;
+}
+
+.button2{
+    font-family: Noto Sans, sans-serif;
+    font-size: 20px;
+    background-color: #74accf;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
